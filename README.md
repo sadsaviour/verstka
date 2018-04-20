@@ -1,2 +1,2 @@
 # verstka
-verstka course
+verstka course v2
