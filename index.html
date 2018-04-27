@@ -1,10 +1,101 @@
 <!doctype html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
 <html>
-    <head>
-        <title>Заголовок страницы</title>
-    </head>
-    <body>
-        <p>Первый текст как первый малыш!</p>
-    </body>
-    
+
+<head>
+    <title>Курс по фронтэнду 1.5</title>
+    <style>
+        p {
+            /* background-color: #282c34;*/
+        }
+
+        a {
+            color: #C678DD;
+        }
+
+        header {
+            box-sizing: border-box;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 0px;
+            color: #FFF;            
+            font-family: sans-serif;
+        }
+
+        nav {
+            background-color: #FD739C;
+            padding-bottom: 20px;
+        }
+
+        h1,
+        h2 {
+            font-family: sans-serif;
+            
+        }
+
+
+        body {
+            font-size: 22px;
+            line-height: 34px;
+        }
+
+        .header {
+            background-color: #FD739C;
+        }
+        header h1 {
+            font-size: 2em;
+            line-height: 55px; 
+            font-family: sans-serif;
+            -webkit-margin-after: 0.3em;
+
+        }
+
+        section {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="header">
+        <a href="#whoami">Кто я такой</a>
+    </nav>
+    <header class="header">
+        <h1>Курс по фронтэнду.
+            <br> Версия 1.5</h1>
+        <p class="header">Премиальный. Бутиковский. Практический.</p>
+    </header>
+
+    <main>
+        <section id="whoami">
+            <h2>Кто я такой</h2>
+            <p class="test">
+                Меня зовут Евгений
+            </p>
+            <p>
+                Я веду
+                <a href="">канал на телеграме</a>
+            </p>
+            <aside>
+                Спроси у Жени
+            </aside>
+        </section>
+
+        <section>
+            <h2>Ченджлог к версии 1.5</h2>
+            <p>Я провел 4 потока.</p>
+            <h3>Было</h3>
+            <ul>
+                <li>материалы </li>
+                <li>материалы</li>
+            </ul>
+            <h3>Стало</h3>
+            <ul>
+                <li>�� матералы</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
 </html>
