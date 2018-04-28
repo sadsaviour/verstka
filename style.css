@@ -1,6 +1,15 @@
 @import url("normalize.css");
 @import url("flexboxgrid2.css");
 
+
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    max-width: 100%;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .container {
     width: 956px;
