@@ -207,19 +207,23 @@ h1 {
   color: #626262;
 }
 
+.restraunt img {
+  width: 100%;
+}
+
 footer {
   background: #262626;
   color: #fff;
   font-size: 13px;
-  line-height: 16px;
+  
   margin-top: 80px;
   padding-top: 56px;
   padding-bottom: 40px;
 }
 
 footer p {
-  margin-top: 23px;
-  margin-bottom: 23px;
+ 
+  line-height: 40px;
 }
 
 footer hr {
@@ -251,9 +255,9 @@ footer hr {
 }
 
 .lang_selector p {
-  margin-top: 0px;
-  padding-top: 12px;
+
   font-size: 13px;
+  line-height: 16px;
   color: #ffffff;
   flex-grow: 1;
 }
