@@ -8,51 +8,62 @@
 
     <header>
 
+        <div class="header_background"></div>
         <div class="container">
-            <div class="row between-lg middle-lg between-md middle-md">
-                <div class="col-md-2 col-lg-2">
+            <div class="row between-lg top-lg between-md top-md between-xs top-xs">
+                <div class="col-xs-5 col-md-2 col-lg-2">
                     <div class="logo">
                         <img src="./img/logo.svg" alt="UBEREATS">
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-5">
+                <div class="col-xs col-md-5 col-lg-5 hidden-xs hidden-sm">
                     <div class="location-container">
                         <div class="time">ASAP</div>
-                        <p>to</p>
+                        <p class="location_p">to</p>
                         <div class="location">
                             <img src="./img/location.svg">
                             <p>ul. Bolshaya Dmitrovka,22</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="sign_in">Sign In</div>
-                            <div class="register">Register</div>
-                            <img src="./img/cart.svg" alt="cart">
+                <div class="col-xs-7 col-md-4 col-lg-3">
+                    <div class="buttons_container">
+                        <div class="sign_in">Sign In</div>
+                        <div class="register">Register</div>
+                        <div class="hidden-xs">
+                            <div class="cart">
+                                <img src="./img/cart.svg" alt="cart">
+                            </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="col-12">
+                    <div class="search">
+                        <img src="./img/search.svg">
+                        <p>Search for restraunts and cuisine</p>
+                    </div>
+                </div>
+                <div class="col-xs-3 hidden-md hidden-lg hidden-xl">
+                    <p class="location-xs-captures">When</p>
+                    <div class="time">ASAP</div>
+                </div>
+                <div class="col-xs-9 hidden-md hidden-lg hidden-xl">
+                    <p class="location-xs-captures">To</p>
+                    <div class="location">
+                        <img src="./img/location.svg">
+                        <p>ul. Bolshaya Dmitrovka,22</p>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-
     </header>
+
     <main>
         <div class="container">
             <section>
-                <div class="search">
-                    <img src="./img/search.svg">
-                    <p>Search for restraunts and cuisine</p>
-                </div>
-            </section>
-            <section>
                 <h1>Moscow Restaurants</h1>
-
-
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="restraunt">
@@ -178,9 +189,15 @@
 
 
             <div class="row">
-                <div class="col-xs-12 col-md-4 col-lg-4"><p>© 2017 Uber Technologies Inc.</p></div>
-                <div class="col-xs-12 col-md-4 col-lg-4"><p>Privacy</p></div>
-                <div class="col-xs-12 col-md-4 col-lg-4"><p>Terms</p></div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <p>© 2017 Uber Technologies Inc.</p>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <p>Privacy</p>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <p>Terms</p>
+                </div>
             </div>
         </div>
 
