@@ -4,20 +4,21 @@
 <link rel="stylesheet" href="normalize.css">
 <link rel="stylesheet" href="flexboxgrid2.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="header.css">
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <html>
 
 <body>
 
-    <header>
+    <header class="header">
 
-        <div class="header-background"></div>
+        <div class="header__background"></div>
         <div class="container">
             <div class="row between-lg top-lg between-md top-md between-xs top-xs">
                 <div class="col-xs-5 col-md-2 col-lg-2">
-                    <div class="logo">
-                        <img src="./img/logo.svg" alt="UBEREATS">
+                    <div class="header__logo ">
+                        <img src="./img/logo.svg" alt="UBEREATS" class="logo">
                     </div>
                 </div>
                 <div class="col-xs col-md-5 col-lg-5 hidden-xs hidden-sm">
@@ -42,9 +43,9 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="search">
-                        <img src="./img/search.svg">
-                        <p>Search for restraunts and cuisine</p>
+                    <div class="search-field">
+                        <img src="./img/search.svg" class="search-field__icon">
+                        <p class="search-field__text">Search for restraunts and cuisine</p>
                     </div>
                 </div>
                 <div class="col-xs-3 hidden-md hidden-lg hidden-xl">
@@ -64,10 +65,10 @@
 
     </header>
 
-    <main>
+    <main class="main">
         <div class="container">
             <section>
-                <h1>Moscow Restaurants</h1>
+                <h1 class="restraunt-h1">Moscow Restaurants</h1>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="restraunt">
@@ -147,7 +148,7 @@
 
     </main>
     </div>
-    <footer>
+    <footer class="footer">
         <div class="container">
 
             <img src="./img/white-logo.svg">
