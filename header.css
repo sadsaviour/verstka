@@ -5,7 +5,7 @@
 }
 
 /* TODO: remove */
-.header .container {
+.header__container {
   position: relative;
   top: -56px;
 }
@@ -19,20 +19,20 @@
   max-width: 100%;
 }
 
-.location-container {
+.when-and-to {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.location-p {
+.when-and-to__caption {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 12px;
   margin-left: 12px;
 }
 
-.time {
+.time-button {
   height: 40px;
   width: 65px;
 
@@ -50,36 +50,37 @@
   border-radius: 2px;
 }
 
-.location {
+.address-field {
+  flex-grow: 2; /*needed for auto resizing of element*/
+  height: 40px;
+
   display: flex;
   justify-content: flex-start;
   align-content: center;
   flex-wrap: nowrap;
-  flex-grow: 2;
-  height: 40px;
-
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-
+  
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   border-radius: 2px;
 }
 
-.location img {
+.location-icon {
   padding-left: 12px;
   padding-right: 12px;
-  line-height: 16px;
 }
 
-.location p {
-  flex-shrink: 2;
+.address-field__address-text {
   padding-right: 12px;
   white-space: nowrap;
+
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-weight: 500;
+  font-size: 13px;
 }
 
-.location-xs-captures {
+.when-and-to__caption_xs {
   margin-bottom: 8px;
   margin-top: 0;
 
@@ -96,7 +97,7 @@
   justify-content: flex-end;
 }
 
-.sign-in {
+.sign-in-button {
   width: 80px;
   height: 40px;
   padding-top: 8px;
@@ -111,7 +112,7 @@
   border-radius: 2px;
 }
 
-.register {
+.register-button {
   width: 80px;
   height: 40px;
   margin-left: 1em;
@@ -128,11 +129,10 @@
   border-radius: 2px;
 }
 
-.cart {
-  position: relative;
-  top: 5px;
+.header__cart-icon {
 
-  padding-right: 1em;
+  margin-top: 5px;
+  margin-right: 1em;
   margin-left: 1em;
 }
 
@@ -151,7 +151,7 @@
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  margin-top:4px;
+  margin-top: 4px;
   box-sizing: border-box;
 }
 

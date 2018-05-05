@@ -35,41 +35,7 @@ html {
   box-sizing: inherit;
 }
 
-.main {
-  position: relative;
-  top: -56px;
-}
 
-.restraunt-h1 {
-  margin-bottom: 0;
-  margin-top: 32px;
-  
-  font-style: normal;
-  font-weight: normal;
-  line-height: 34px;
-  font-size: 22px;
-}
-
-.restraunt {
-  margin-top: 16px;
-}
-
-.restraunt h3 {
-  font-style: normal;
-  font-weight: normal;
-  line-height: 24px;
-  font-size: 16px;
-}
-
-.restraunt p {
-  line-height: 21px;
-  font-size: 14px;
-  color: #626262;
-}
-
-.restraunt img {
-  width: 100%;
-}
 
 .footer {
   margin-top: 80px;

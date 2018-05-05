@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="flexboxgrid2.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="main.css">
+
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <html>
@@ -14,7 +16,7 @@
     <header class="header">
 
         <div class="header__background"></div>
-        <div class="container">
+        <div class="header__container container">
             <div class="row between-lg top-lg between-md top-md between-xs top-xs">
                 <div class="col-xs-5 col-md-2 col-lg-2">
                     <div class="header__logo ">
@@ -22,22 +24,22 @@
                     </div>
                 </div>
                 <div class="col-xs col-md-5 col-lg-5 hidden-xs hidden-sm">
-                    <div class="location-container">
-                        <div class="time">ASAP</div>
-                        <p class="location-p">to</p>
-                        <div class="location">
-                            <img src="./img/location.svg">
-                            <p>ul. Bolshaya Dmitrovka,22</p>
+                    <div class="when-and-to">
+                        <div class="time-button">ASAP</div>
+                        <p class="when-and-to__caption">to</p>
+                        <div class="address-field">
+                            <img src="./img/location.svg" class="location-icon">
+                            <p class="address-field__address-text">ul. Bolshaya Dmitrovka,22</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-7 col-md-4 col-lg-3">
-                    <div class="buttons-container">
-                        <div class="sign-in">Sign In</div>
-                        <div class="register">Register</div>
-                        <div class="hidden-xs">
-                            <div class="cart">
-                                <img src="./img/cart.svg" alt="cart">
+                    <div class="container end-xs end-md end-lg end-xl">
+                        <div class="row">
+                            <div class="sign-in-button">Sign In</div>
+                            <div class="register-button">Register</div>
+                            <div class="hidden-xs header__cart-icon">
+                                    <img src="./img/cart.svg" alt="cart">
                             </div>
                         </div>
                     </div>
@@ -49,14 +51,14 @@
                     </div>
                 </div>
                 <div class="col-xs-3 hidden-md hidden-lg hidden-xl">
-                    <p class="location-xs-captures">When</p>
-                    <div class="time">ASAP</div>
+                    <p class="when-and-to__caption_xs">When</p>
+                    <div class="time-button">ASAP</div>
                 </div>
                 <div class="col-xs-9 hidden-md hidden-lg hidden-xl">
-                    <p class="location-xs-captures">To</p>
-                    <div class="location">
-                        <img src="./img/location.svg">
-                        <p>ul. Bolshaya Dmitrovka,22</p>
+                    <p class="when-and-to__caption_xs">To</p>
+                    <div class="address-field">
+                        <img src="./img/location.svg" class="location-icon">
+                        <p class="address-field__address-text">ul. Bolshaya Dmitrovka,22</p>
                     </div>
                 </div>
             </div>
@@ -65,81 +67,81 @@
 
     </header>
 
-    <main class="main">
+    <main class="restraunts-list">
         <div class="container">
             <section>
-                <h1 class="restraunt-h1">Moscow Restaurants</h1>
+                <h1 class="restraunts-list__header">Moscow Restaurants</h1>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="restraunt">
-                            <img src="./img/photo.png">
-                            <h3>Макдональдс — Газетный</h3>
-                            <p>₽₽ • Бургеры</p>
-                            <p>25 - 35 Min</p>
+                            <img src="./img/photo.png" class="restraunt-img">
+                            <h3 class="restraunt__header">Макдональдс — Газетный</h3>
+                            <p class="restraunt__caption">₽₽ • Бургеры</p>
+                            <p class="restraunt__caption">25 - 35 Min</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="restraunt">
-                            <img src="./img/dimsum.png">
-                            <h3>DimSum & Co — ЦДМ</h3>
-                            <p>₽ • Японская • Китайская • Азиатская</p>
-                            <p>40 - 50 Min</p>
+                            <img src="./img/dimsum.png" class="restraunt-img">
+                            <h3 class="restraunt__header">DimSum & Co — ЦДМ</h3>
+                            <p class="restraunt__caption">₽ • Японская • Китайская • Азиатская</p>
+                            <p class="restraunt__caption">40 - 50 Min</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="restraunt">
-                            <img src="./img/dvizhok.png">
-                            <h3>ДвижОК — Манежная</h3>
-                            <p>₽ • Американская • Европейская</p>
-                            <p>35 - 45 Min</p>
+                            <img src="./img/dvizhok.png" class="restraunt-img">
+                            <h3 class="restraunt__header">ДвижОК — Манежная</h3>
+                            <p class="restraunt__caption">₽ • Американская • Европейская</p>
+                            <p class="restraunt__caption">35 - 45 Min</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-md-6 col-lg-4" class="restraunt-img">
                         <div class="restraunt">
                             <img src="./img/ngha.png">
-                            <h3>НЯ — NHA</h3>
-                            <p>₽₽ • Вьетнамская</p>
-                            <p>30 - 40 Min</p>
+                            <h3 class="restraunt__header">НЯ — NHA</h3>
+                            <p class="restraunt__caption">₽₽ • Вьетнамская</p>
+                            <p class="restraunt__caption">30 - 40 Min</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-md-6 col-lg-4" class="restraunt-img">
                         <div class="restraunt">
                             <img src="./img/tochka.png">
-                            <h3>Точка Дзы — Цветной</h3>
-                            <p>₽₽ • Вьетнамская</p>
-                            <p>40 - 50 Min</p>
+                            <h3 class="restraunt__header">Точка Дзы — Цветной</h3>
+                            <p class="restraunt__caption">₽₽ • Вьетнамская</p>
+                            <p class="restraunt__caption">40 - 50 Min</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-md-6 col-lg-4" class="restraunt-img">
                         <div class="restraunt">
                             <img src="./img/cinnabon.png">
-                            <h3>Cinnabon</h3>
-                            <p>₽ • Выпечка • Десерты • Капкейки</p>
-                            <p>25 - 35 Min</p>
+                            <h3 class="restraunt__header">Cinnabon</h3>
+                            <p class="restraunt__caption">₽ • Выпечка • Десерты • Капкейки</p>
+                            <p class="restraunt__caption">25 - 35 Min</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="restraunt">
-                            <img src="./img/pizzelove.png">
-                            <h3>PIZZELOVE</h3>
-                            <p>₽₽ • Пицца</p>
-                            <p>15 - 25 Min</p>
+                            <img src="./img/pizzelove.png" class="restraunt-img">
+                            <h3 class="restraunt__header">PIZZELOVE</h3>
+                            <p class="restraunt__caption">₽₽ • Пицца</p>
+                            <p class="restraunt__caption">15 - 25 Min</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-md-6 col-lg-4" class="restraunt-img">
                         <div class="restraunt">
                             <img src="./img/zu.png">
-                            <h3>Zю кафе — Тверская</h3>
-                            <p>₽₽ • Японская</p>
-                            <p>25 - 35 Min</p>
+                            <h3 class="restraunt__header">Zю кафе — Тверская</h3>
+                            <p class="restraunt__caption">₽₽ • Японская</p>
+                            <p class="restraunt__caption">25 - 35 Min</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-md-6 col-lg-4" class="restraunt-img">
                         <div class="restraunt">
-                            <img src="./img/barbq.png">
-                            <h3>Bar BQ Cafe — Манежная</h3>
-                            <p>₽₽₽ • Европейская</p>
-                            <p>25 - 35 Min</p>
+                            <img src="./img/barbq.png" >
+                            <h3 class="restraunt__header">Bar BQ Cafe — Манежная</h3>
+                            <p class="restraunt__caption">₽₽₽ • Европейская</p>
+                            <p class="restraunt__caption">25 - 35 Min</p>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,35 @@
+.restraunts-list {
+  position: relative;
+  top: -56px;
+}
+
+.restraunts-list__header {
+  margin-bottom: 0;
+  margin-top: 32px;
+  
+  font-style: normal;
+  font-weight: normal;
+  line-height: 34px;
+  font-size: 22px;
+}
+
+.restraunt {
+  margin-top: 16px;
+}
+
+.restraunt__header {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.restraunt__caption {
+  line-height: 21px;
+  font-size: 14px;
+  color: #626262;
+}
+
+.restraunt-img {
+  width: 100%;
+}
