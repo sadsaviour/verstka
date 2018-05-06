@@ -4,10 +4,10 @@
   box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
 }
 
-/* TODO: remove */
 .header__container {
   position: relative;
   top: -56px;
+  width: 
 }
 
 .header__logo {
@@ -91,10 +91,13 @@
   color: #626262;
 }
 
-.buttons-container {
+.account-buttons {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sign-in-button {

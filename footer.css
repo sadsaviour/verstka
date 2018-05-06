@@ -62,7 +62,14 @@
 }
 
 .footer-links__social-icons {
+    /* need this margin for mobile */
     margin-bottom: 39px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-links__social-icons {
+        margin-bottom: 0;
+    }
 }
 
 .apps {
