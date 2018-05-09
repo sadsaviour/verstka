@@ -35,6 +35,8 @@ html {
   box-sizing: inherit;
 }
 
-
+label {
+  width: 100%;
+}
 
 
