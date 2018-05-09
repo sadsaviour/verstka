@@ -26,30 +26,42 @@
                 </div>
                 <div class="col-xs col-md-5 col-lg-5 hidden-xs hidden-sm">
                     <div class="when-and-to">
-                        <div class="time-button">ASAP</div>
+                        <button name="Delivery-time-button" class="time-button">ASAP</button>
                         <p class="when-and-to__caption">to</p>
+
                         <div class="address-field">
                             <img src="./img/location.svg" class="location-icon">
-                            <p class="address-field__address-text">ul. Bolshaya Dmitrovka,22</p>
+                            <form name="delivery-address" class="address-form">
+                                <label for="delivery-address-input">
+                                    <span style="display: none">Delivery address</span>
+                                    <input class="address-field__address-input" type="text" name="delivery-address-input" placeholder="ul. Bolshaya Dmitrovka,22">
+                                </label>
+                            </form>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-xs-7 col-md-4 col-lg-3">
                     <div class="account-buttons end-xs end-md end-lg end-xl">
                         <div class="row">
-                            <div class="sign-in-button">Sign In</div>
-                            <div class="register-button">Register</div>
-                            <div class="hidden-xs header__cart-icon">
+                            <button name="sing-in-button" class="sign-in-button">Sign In</button>
+                            <button name="register-button" class="register-button">Register</button>
+                            <button class="hidden-xs header__cart-button cart-button">
                                 <img src="./img/cart.svg" alt="cart">
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="search-field">
-                        <img src="./img/search.svg" class="search-field__icon">
-                        <p class="search-field__text">Search for restraunts and cuisine</p>
-                    </div>
+                    <form name="restraunt-search">
+                        <div class="search-field">
+                            <img src="./img/search.svg" class="search-field__icon">
+                            <label for="restraunt-search-input">
+                                <span style="display : none">Search for restraunts and cuisine</span>
+                                <input class="search-field__input" type="text" name="restraunt-search-input" placeholder="Search for restraunts and cuisine">
+                            </label>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-xs-3 hidden-md hidden-lg hidden-xl">
                     <p class="when-and-to__caption_xs">When</p>
@@ -59,7 +71,12 @@
                     <p class="when-and-to__caption_xs">To</p>
                     <div class="address-field">
                         <img src="./img/location.svg" class="location-icon">
-                        <p class="address-field__address-text">ul. Bolshaya Dmitrovka,22</p>
+                        <form name="delivery-address" class="address-form">
+                            <label for="delivery-address-input">
+                                <span style="display: none">Delivery address</span>
+                                <input class="address-field__address-input" type="text" name="delivery-address-input" placeholder="ul. Bolshaya Dmitrovka,22">
+                            </label>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -209,22 +226,13 @@
                 </div>
             </div>
         </div>
-
-        </div>
-
         </div>
         </div>
-
+        </div>
     </footer>
     <div class="back-button">
         <img src="./img/back_button.svg">
     </div>
-
-
-
-
-
-
 </body>
 
 </html>
